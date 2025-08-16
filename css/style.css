@@ -956,7 +956,7 @@ html:not(.lt-ie10) .not-animated {
 keyframes
 
 -------------------------------- */
-@  -webkit-keyframes scaleIn {
+@-webkit-keyframes scaleIn {
     from {
     -webkit-transform: translateY(-50%) scale(0);
   }
@@ -1570,9 +1570,9 @@ body.light .personal-info ul h6 {
   display: block;
 }
 
-.chart-bar>.percent span:before {
+/* .chart-bar>.percent span:before {
   
-}
+} */
 
 .arrow {
 	display: inline-block;
@@ -1935,7 +1935,7 @@ section#blog figure a {
 section#blog figure a img {
   width: 100%;
   border-radius: 4px;
-  webkit-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -2343,8 +2343,9 @@ ul.social-intro {
 
 .social-intro li {
   display: inline-block;
-  float: left;
-  margin-bottom: 10px;
+  /* float: left; */
+  /* margin-bottom: 10px; */
+  margin: 0 10px;
 }
 
 .social-intro li:not(:last-child) {
@@ -2477,12 +2478,12 @@ ul.social-intro li a:hover i {
 @media only screen and (max-width:1024px) and (min-width:768px) {
 	.row.personal-info > div:first-child {
 		flex: 0 0 100%;
-		max-width: 100%;
+		max-width: 95%;
 	}
 	.row.personal-info > div:nth-child(2),
 	.row.personal-info > div:nth-child(3)	{
 		flex: 0 0 100%;
-		max-width: 100%;
+		max-width: 95%;
 	}
 	.row.personal-info > div:nth-child(2) {
 		text-align:right;
