@@ -319,5 +319,33 @@
 	});
 
     /* ----------------------------------------------------------- */
+	
+ 
+	// 
+  $(document).ready(function() {
+  function animateCounter(id, target, speed) {
+    let count = 0;
+    let increment = Math.ceil(target / 100);
+
+    function update() {
+      if (count < target) {
+        count += increment;
+        if (count > target) count = target;
+        $(id).text(count);
+        setTimeout(update, speed);
+      } else {
+        $(id).text(target);
+      }
+    }
+    update();
+  }
+
+  animateCounter("#counter", 1150, 20);
+  animateCounter("#counter1", 3, 100);
+  animateCounter("#counter2", 11, 100);
+  animateCounter("#counter3", 15, 100);
+});
+
+
 
 })(jQuery);
