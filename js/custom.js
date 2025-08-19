@@ -321,7 +321,7 @@
     /* ----------------------------------------------------------- */
 	
  
-	// 
+	// stats section
   $(document).ready(function() {
   function animateCounter(id, target, speed) {
     let count = 0;
