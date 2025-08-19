@@ -3029,3 +3029,59 @@ ul.social-intro li a:hover i {
     font-size: 14px;
   }
 }
+
+/* =============================
+   Tablet responsive (768px – 1024px)
+   ============================= */
+@media (min-width:768px) and (max-width:1024px) {
+
+  /* Navbar icon visible on tablet */
+  .cd-stretchy-nav {
+    display: block !important;
+    position: fixed;
+    z-index: 999;
+    top: 20px;
+    left: 20px;
+  }
+
+  /* Fix main-text-container layout */
+  .main-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  /* Image responsive (not fixed) */
+  .main-text-container img.leftimagepicture {
+    position: static !important;
+    max-width: 40%;
+    border-radius: 50%;
+    border: 8px solid rgba(255,255,255,.1);
+  }
+
+  .main-text-container .main-text {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+/* =============================
+   Mobile responsive (<768px)
+   ============================= */
+@media (max-width:767px) {
+  .main-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .main-text-container img.leftimagepicture {
+    position: static !important;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
